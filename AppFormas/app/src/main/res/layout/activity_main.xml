@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etTrianguloBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="173dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Base"
+        app:layout_constraintBottom_toBottomOf="@+id/btCirculo"
+        app:layout_constraintEnd_toStartOf="@+id/btTraingulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btCuadrado" />
+
+    <Button
+        android:id="@+id/btTraingulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:text="Triángulo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etTrianguloBase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etTrianguloBase" />
+
+    <Button
+        android:id="@+id/btCuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="2dp"
+        android:text="Cuadrado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etLado"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="12dp"
+        android:text="Circulo"
+        app:layout_constraintBottom_toBottomOf="@+id/etRadio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etRadio" />
+
+    <TextView
+        android:id="@+id/txtCuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="Cuadrado"
+        app:layout_constraintBottom_toTopOf="@+id/etLado"
+        app:layout_constraintStart_toStartOf="@+id/etLado" />
+
+    <TextView
+        android:id="@+id/txtTriangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="26dp"
+        android:text="Triángulo"
+        app:layout_constraintBottom_toTopOf="@+id/etTrianguloBase"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="25dp"
+        android:text="Circulo"
+        app:layout_constraintBottom_toTopOf="@+id/etRadio"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etLado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="14dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Lado"
+        app:layout_constraintEnd_toStartOf="@+id/btCuadrado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btCuadrado" />
+
+    <EditText
+        android:id="@+id/etTrainguloAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Altura"
+        app:layout_constraintStart_toStartOf="@+id/etTrianguloBase"
+        app:layout_constraintTop_toBottomOf="@+id/etTrianguloBase" />
+
+    <EditText
+        android:id="@+id/etRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="222dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Radio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btCirculo"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
