@@ -26,6 +26,6 @@ class MainActivity : AppCompatActivity() {
         val imageButton = findViewById<ImageButton>(R.id.ib_bebe)
 
 
-        btApagado.setOnEditorActionListener()
+
     }
 }
